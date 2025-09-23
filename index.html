@@ -1,166 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shubh Srivastava - Portfolio</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<style>
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: #fff;
-}
-header {
-    background: linear-gradient(90deg, #00ffb3, #00d1ff);
-    color: black;
-    padding: 40px 20px;
-    text-align: center;
-}
-header img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid black;
-    margin-bottom: 15px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-}
-header h1 { margin: 10px 0 5px; font-size: 2.5rem; }
-header p { font-size: 1.2rem; }
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-}
-.card {
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-}
-.card h2 {
-    color: #00ffb3;
-    margin-top: 0;
-    border-bottom: 2px solid #00ffb3;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-.contact a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 8px 0;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.05rem;
-    word-break: break-word;
-}
-.contact a:hover { color: #00d1ff; }
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.skill-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: #0f3c4c;
-    padding: 12px 15px;
-    border-radius: 8px;
-    font-size: 1rem;
-}
-.skill-item img { width: 28px; height: 28px; }
-.projects ul { list-style: none; padding: 0; }
-.projects li {
-    background: #222;
-    margin: 12px 0;
-    padding: 12px;
-    border-left: 5px solid #00ffb3;
-    border-radius: 5px;
-}
-.projects li p { margin: 5px 0; font-size: 0.95rem; color: #ccc; }
-.tech-icons { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 5px; }
-.tech-icons img { width: 28px; height: 28px; }
-.resume iframe { width: 100%; height: 400px; border: none; border-radius: 8px; }
-.resume a {
-    display: inline-block; margin-top: 10px; padding: 10px 15px;
-    background: #00ffb3; color: black; border-radius: 5px;
-    text-decoration: none;
-}
-.resume a:hover { background: #00d1ff; }
-footer { text-align: center; padding: 15px; background: #111; color: #00ffb3; margin-top: 20px; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubh Srivastava - Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <img src="profile.jpg" alt="Shubh Srivastava">
-    <h1>Shubh Srivastava</h1>
-    <p>Aspiring Data Scientist & Developer</p>
-</header>
-<div class="container">
-    <section class="card contact">
-        <h2>Contact</h2>
-        <a href="https://github.com/pywizard2025-wq" target="_blank"><i class="fab fa-github"></i> GitHub: pywizard2025-wq</a>
-        <a href="mailto:shubhsrivastava071972@gmail.com"><i class="fas fa-envelope"></i> Email: shubhsrivastava071972@gmail.com</a>
-        <a href="tel:+919580425870"><i class="fas fa-phone"></i> Phone: +91 9580425870</a>
-    </section>
-    <section class="card skills-section">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</div>
-            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">HTML</div>
-            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">CSS</div>
-            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL">SQL</div>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="profile.jpg" alt="Profile Picture" />
+    <h1>Hi, I'm Shubh Srivastava</h1>
+    <h2><span id="animated-text"></span></h2>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><i class="devicon-python-plain colored"></i> Python</div>
+      <div class="skill"><i class="devicon-html5-plain colored"></i> HTML</div>
+      <div class="skill"><i class="devicon-css3-plain colored"></i> CSS</div>
+      <div class="skill"><i class="devicon-mysql-plain colored"></i> SQL</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Credit Card Fraud Detection</h3>
+        <p>Machine learning model that detects fraudulent credit card transactions with high accuracy.</p>
+        <div class="tech-icons">
+          <i class="devicon-python-plain colored"></i>
+          <i class="devicon-pandas-original"></i>
+          <i class="devicon-numpy-original"></i>
+          <i class="devicon-scikitlearn-plain colored"></i>
         </div>
-    </section>
-    <section class="card projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Credit Card Fraud Detection</strong>
-                <p>Used machine learning to detect fraudulent transactions.</p>
-                <div class="tech-icons">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" title="Pandas">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" title="Matplotlib">
-                </div>
-            </li>
-            <li>
-                <strong>Stock Market Trend Analysis & Prediction</strong>
-                <p>Analyzed historical stock data to predict trends using predictive modeling.</p>
-                <div class="tech-icons">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" title="NumPy">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" title="Pandas">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" title="Matplotlib">
-                </div>
-            </li>
-            <li>
-                <strong>Bike Usage & Demand Analysis Dashboard</strong>
-                <p>Built interactive dashboards to visualize bike rental trends and demand.</p>
-                <div class="tech-icons">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" title="Pandas">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" title="Matplotlib">
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section class="card resume">
-        <h2>Resume</h2>
-        <iframe src="resume.pdf"></iframe>
-        <a href="resume.pdf" download><i class="fas fa-download"></i> Download Resume</a>
-    </section>
-</div>
-<footer>
-<p>© 2025 Shubh Srivastava | Portfolio</p>
-</footer>
+      </div>
+
+      <div class="project-card">
+        <h3>Stock Market Trend Analysis & Prediction</h3>
+        <p>Analyzed stock market data and built predictive models for price trends.</p>
+        <div class="tech-icons">
+          <i class="devicon-python-plain colored"></i>
+          <i class="devicon-numpy-original"></i>
+          <i class="devicon-pandas-original"></i>
+          <i class="devicon-matplotlib-plain colored"></i>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Bike Usage & Demand Analysis Dashboard</h3>
+        <p>Interactive dashboard showing bike usage trends and predicting demand.</p>
+        <div class="tech-icons">
+          <i class="devicon-python-plain colored"></i>
+          <i class="devicon-pandas-original"></i>
+          <i class="devicon-numpy-original"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="resume.pdf" class="resume-btn" target="_blank">View My Resume</a>
+  </section>
+
+  <!-- Connect Section -->
+  <section id="connect">
+    <h2>Connect With Me</h2>
+    <form action="https://formspree.io/f/mqaykpla" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Your Contact Number">
+      <textarea name="message" placeholder="Purpose of Contact" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Shubh Srivastava. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
