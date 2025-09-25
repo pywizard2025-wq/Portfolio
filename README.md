@@ -1,2 +1,2 @@
 # Portfolio 
-This is just a simple portfolio of mine by using only html
+This is just a simple portfolio of mine with just hyml,css,js
