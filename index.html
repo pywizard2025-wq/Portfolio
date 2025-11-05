@@ -18,67 +18,192 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Canvas Background -->
+  <canvas id="darkveil"></canvas>
+
   <!-- Navigation -->
   <nav>
-    <ul>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#connect">Connect</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">Shubh</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- Header -->
-  <header>
-    <img src="profile.jpg" alt="Profile Picture" />
-    <h1>Hi, I'm Shubh Srivastava</h1>
-    <h2><span id="animated-text"></span></h2>
+  <!-- Header / Home Section -->
+  <header id="home">
+    <div class="header-content">
+      <img src="profile.jpg" alt="Profile Picture" />
+      <h1>Hi, I'm Shubh Srivastava</h1>
+      <h2><span id="animated-text"></span></h2>
+      <div class="social-links-header">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
   </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a passionate <strong>Data Scientist</strong> and <strong>Developer</strong> with a strong foundation in 
+            machine learning, data analysis, and web development. I love turning complex data into meaningful insights 
+            and building innovative solutions that make a difference.
+          </p>
+          <p>
+            My journey in technology started with curiosity and has evolved into a deep passion for solving real-world 
+            problems using data-driven approaches. I'm constantly learning new technologies and methodologies to stay 
+            at the forefront of the field.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <h3>10+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+              <h3>5+</h3>
+              <p>Technologies Mastered</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Dedication</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Skills Section -->
   <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill"><i class="devicon-python-plain colored"></i> Python</div>
-      <div class="skill"><i class="devicon-html5-plain colored"></i> HTML</div>
-      <div class="skill"><i class="devicon-css3-plain colored"></i> CSS</div>
-      <div class="skill"><i class="devicon-mysql-plain colored"></i> SQL</div>
+    <div class="container">
+      <h2>Skills & Technologies</h2>
+      <p class="section-subtitle">Technologies I work with</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="devicon-python-plain colored"></i>
+          <h3>Python</h3>
+          <p>Data Science, Machine Learning, Automation</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-html5-plain colored"></i>
+          <h3>HTML5</h3>
+          <p>Semantic Markup, Web Structure</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-css3-plain colored"></i>
+          <h3>CSS3</h3>
+          <p>Styling, Responsive Design, Animations</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-mysql-plain colored"></i>
+          <h3>MySQL</h3>
+          <p>Database Management, Query Optimization</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-javascript-plain colored"></i>
+          <h3>JavaScript</h3>
+          <p>Frontend Development, Interactive UIs</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas Logo" class="skill-logo" />
+          <h3>Pandas</h3>
+          <p>Data Manipulation, Analysis</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://numpy.org/images/logo.svg" alt="NumPy Logo" class="skill-logo" />
+          <h3>NumPy</h3>
+          <p>Numerical Computing, Arrays</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-scikitlearn-plain colored"></i>
+          <h3>Scikit-learn</h3>
+          <p>Machine Learning Models</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Credit Card Fraud Detection</h3>
-        <p>Machine learning model that detects fraudulent credit card transactions with high accuracy.</p>
-        <div class="tech-icons">
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-pandas-original"></i>
-          <i class="devicon-numpy-original"></i>
-          <i class="devicon-scikitlearn-plain colored"></i>
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <p class="section-subtitle">Some of my recent work</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Credit Card Fraud Detection</h3>
+          <p>
+            Developed a machine learning model that detects fraudulent credit card transactions with high accuracy. 
+            Used advanced feature engineering and ensemble methods to achieve excellent performance metrics.
+          </p>
+          <div class="tech-icons">
+            <i class="devicon-python-plain colored" title="Python"></i>
+            <i class="devicon-pandas-original" title="Pandas"></i>
+            <i class="devicon-numpy-original" title="NumPy"></i>
+            <i class="devicon-scikitlearn-plain colored" title="Scikit-learn"></i>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
         </div>
-      </div>
 
-      <div class="project-card">
-        <h3>Stock Market Trend Analysis & Prediction</h3>
-        <p>Analyzed stock market data and built predictive models for price trends.</p>
-        <div class="tech-icons">
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-numpy-original"></i>
-          <i class="devicon-pandas-original"></i>
-          <i class="devicon-matplotlib-plain colored"></i>
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Stock Market Trend Analysis & Prediction</h3>
+          <p>
+            Analyzed historical stock market data and built predictive models for price trends using time series analysis. 
+            Implemented various ML algorithms to forecast stock prices and identify trading opportunities.
+          </p>
+          <div class="tech-icons">
+            <i class="devicon-python-plain colored" title="Python"></i>
+            <i class="devicon-numpy-original" title="NumPy"></i>
+            <i class="devicon-pandas-original" title="Pandas"></i>
+            <i class="devicon-matplotlib-plain colored" title="Matplotlib"></i>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
         </div>
-      </div>
 
-      <div class="project-card">
-        <h3>Bike Usage & Demand Analysis Dashboard</h3>
-        <p>Interactive dashboard showing bike usage trends and predicting demand.</p>
-        <div class="tech-icons">
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-pandas-original"></i>
-          <i class="devicon-numpy-original"></i>
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-bicycle"></i>
+          </div>
+          <h3>Bike Usage & Demand Analysis Dashboard</h3>
+          <p>
+            Created an interactive dashboard showing bike usage trends and predicting demand. Used data visualization 
+            techniques to provide insights into usage patterns and optimize bike-sharing services.
+          </p>
+          <div class="tech-icons">
+            <i class="devicon-python-plain colored" title="Python"></i>
+            <i class="devicon-pandas-original" title="Pandas"></i>
+            <i class="devicon-numpy-original" title="NumPy"></i>
+            <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
         </div>
       </div>
     </div>
@@ -86,24 +211,43 @@
 
   <!-- Resume Section -->
   <section id="resume">
-    <h2>Resume</h2>
-    <a href="resume.pdf" class="resume-btn" target="_blank">View My Resume</a>
+    <div class="container">
+      <h2>Resume</h2>
+      <p class="section-subtitle">Download my resume to learn more about my experience</p>
+      <a href="resume.pdf" class="resume-btn" target="_blank">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
   </section>
 
   <!-- Connect Section -->
   <section id="connect">
-    <h2>Connect With Me</h2>
-    <form action="https://formspree.io/f/mqaykpla" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="text" name="phone" placeholder="Your Contact Number">
-      <textarea name="message" placeholder="Purpose of Contact" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="container">
+      <h2>Connect With Me</h2>
+      <p class="section-subtitle">Let's work together! Feel free to reach out</p>
+      <form action="https://formspree.io/f/mqaykpla" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Your Contact Number">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Shubh Srivastava. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="social-links-footer">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>© 2025 Shubh Srivastava. All rights reserved.</p>
+      <p class="footer-note">Built with ❤️ using HTML, CSS & JavaScript</p>
+    </div>
   </footer>
 
   <!-- JS -->
